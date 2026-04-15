@@ -48,7 +48,7 @@
     * **CUA SDK**：`@ui-tars/sdk` (自动处理大模型多步状态流转与思维链监听)
     * **物理外设接管**：`@ui-tars/operator-nut-js` (基于 `nut.js` 的内核级键鼠模拟与屏幕捕获)
 * **云端推理视觉大脑**
-    * **模型选型**：火山引擎 `doubao-1-5-thinking-vision-pro-250428`
+    * **模型选型**：火山引擎 `doubao-seed-2-0-mini-260215`
 * **视觉校验微服务 (Python / OpenCV)**
     * 轻量级 FastAPI 服务，专职处理图像矩阵，提供极速的坐标可靠性审核与基于感知哈希（`imagehash`）的屏幕静止状态侦测。
 
@@ -70,7 +70,7 @@ async function runLarkCUA() {
     model: {
       baseURL: process.env.VOLCENGINE_BASE_URL,
       apiKey: process.env.VOLCENGINE_API_KEY,
-      model: 'doubao-1-5-thinking-vision-pro-250428', 
+      model: 'doubao-seed-2-0-mini-260215', 
     },
     operator: operator,
     onData: ({ data }) => {
